@@ -39,11 +39,10 @@ library
                  , Graphics.Svg.CssTypes
                  , Graphics.Svg.Types
                  , Graphics.Svg.PathParser
+                 , Graphics.Svg.NamedColors
                  , Graphics.Svg.XmlParser
-
-  other-modules: Graphics.Svg.NamedColors
-               , Graphics.Svg.CssParser
-               , Graphics.Svg.ColorParser
+                 , Graphics.Svg.CssParser
+                 , Graphics.Svg.ColorParser
 
   if impl(ghc >= 8.0)
     ghc-options: -Wcompat -Wnoncanonical-monad-instances -Wnoncanonical-monadfail-instances
@@ -64,7 +63,6 @@ library
                , transformers >= 0.3 && < 0.7
                , mtl        >= 2.1 && < 2.4
                , lens       >= 4.6
-               , hspec
 
 test-suite test
   hs-source-dirs: test
