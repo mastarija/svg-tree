@@ -64,6 +64,7 @@ library
                , transformers >= 0.3 && < 0.7
                , mtl        >= 2.1 && < 2.4
                , lens       >= 4.6
+               , hspec
 
 test-suite test
   hs-source-dirs: test
